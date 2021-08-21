@@ -88,7 +88,7 @@ footer {
 }
 
 .photo-thumbnail, .photo-center {
-  transition: .5s ease-in-out;
+  transition: .05s ease-in-out;
 }
 .photo-thumbnail:hover {
   width: 215px;
