@@ -1,0 +1,202 @@
+img {
+  filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+}
+
+.overlay {
+  position: fixed;
+  opacity: 0.25; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/paperbg.png");
+  pointer-events: none;
+  z-index: -1; 
+}
+
+body {
+  background-color: #ffd5a8;
+}
+
+.bigtext {
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .bigtext {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+
+.video-container {
+  position: relative;
+  width: 80vw; 
+  max-width: 1000px; 
+  margin: 0 auto;
+}
+
+.aspect-ratio {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* for 16:9 aspect ratio */
+}
+
+.aspect-ratio iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+}
+
+@font-face {
+    font-family: shibwritingregular;
+    src: url('../font/shibwriting2-regular-webfont.woff2') format('woff2'),
+         url('../font/shibwriting2-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: shibwritingBOLD;
+  src: url('../font/shibwriting2-regular-webfont.woff2') format('woff2'),
+       url('../font/shibwriting2-regular-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.imgLink {
+  font-family: shibwritingregular;
+  font-size: 175%;
+}
+
+.imgtooltip {
+  position: relative;
+}
+
+.imgtooltip .imgtooltiptext {
+  pointer-events: none;
+  font-family: shibwritingregular;
+  font-size: 100%;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  padding: 3px;
+  position: absolute;
+  z-index: 1;
+  bottom: 450%;
+  left: 45%;
+  margin-left: -90px;
+
+  opacity: 0;
+  transition: opacity .1s;
+}
+
+.imgtooltip.bottom1 .imgtooltiptext {
+  bottom: 150%;
+  margin-left: -95px;
+  font-size: 75%;
+  transition: opacity .1s;
+}
+
+.imgtooltip:hover .imgtooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.imgtooltip:not(:hover) .imgtooltiptext {
+  opacity: 0;
+}
+
+p, .nav-item {
+  font-family: shibwritingregular;
+  font-size: 250%;
+  text-align: center;
+  z-index: 2;
+}
+
+h1 {
+  font-family: shibwritingBOLD;
+  font-size: 400%;
+  text-align: center;
+}
+
+h2 {
+  font-family: shibwritingBOLD;
+  font-size: 350%;
+}
+
+.align-left {
+  font-family: shibwritingBOLD;
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.photo-center {
+  display: inline; margin-left: auto; margin-right: auto;
+}
+
+.photo-thumbnail {
+  display: inline;
+  margin-left: 0.5%; margin-right: 0.5%;
+  border: 8px solid black;
+  border-radius: 20%;
+}
+
+.nav-item {
+  padding: 0em 0.2em 0em 0.2em;
+  transition: .1s ease-out;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+}
+
+p, h2, h3, h4, h5, h6 {
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}
+
+.no-padding {
+  padding: 0em;
+}
+
+.wrapper {
+  min-height: calc(100vh - 60px);
+  padding-bottom: 50px;
+}
+
+.footer {
+  height: 60px;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    height: 120px;
+  } 
+}
+
+.photo-thumbnail, .photo-center {
+  transition: .1s ease-out;
+}
+.photo-thumbnail {
+  width: 250px;
+}
+.photo-center {
+  width: 150px;
+}
+
+.photo-thumbnail:hover {
+  transform: scale(1.1);
+}
+.photo-center:hover {
+  transform: scale(1.1);
+}
