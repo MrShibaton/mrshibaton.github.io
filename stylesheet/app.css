@@ -15,7 +15,29 @@ img {
 }
 
 body {
-  background-color: #ffd5a8;
+  background: linear-gradient(45deg, #efffa8, #fff3a8, #ffcca8, #ffcc98);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
+
+.navbar
+{
+  background-color: #ffab5e;
+  background: linear-gradient(45deg, #ffbf5e, #ffab5e, #ff995e, #ff945e);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .bigtext {
