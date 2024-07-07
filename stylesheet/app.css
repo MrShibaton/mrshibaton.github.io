@@ -194,6 +194,15 @@ h2 {
 p {
   margin-left: 1.5%;
   margin-top: -1rem;
+  animation: wiggle 2.5s infinite;
+}
+
+@keyframes wiggle {
+  0% { top: 0px;  }
+ 25% { top: 20px; }
+ 50% { top: -20px; ; }
+ 75% { top: 0px;  }
+100% { top: 0px;  }
 }
 
 .no-padding {
@@ -213,6 +222,19 @@ p {
   .footer {
     height: 120px;
   } 
+  .photo-thumbnail {
+    border: 8px solid black;
+    min-width: 45vw;
+  }
+  .photo-center {
+    min-width: 200px;
+  }
+  h1 {
+    font-size: 15vw;
+  }
+  #gmail_link {
+    font-size: 80%;
+  }
 }
 
 .photo-thumbnail, .photo-center {
@@ -220,11 +242,9 @@ p {
 }
 .photo-thumbnail {
   width: 15%;
-  min-width: 170px;
 }
 .photo-center {
   width: 12%;
-  min-width: 200px;
 }
 
 .photo-thumbnail:hover {
