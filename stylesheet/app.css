@@ -223,7 +223,8 @@ p {
   min-width: 170px;
 }
 .photo-center {
-  width: 8%;
+  width: 12%;
+  min-width: 200px;
 }
 
 .photo-thumbnail:hover {
