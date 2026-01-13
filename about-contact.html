@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="stylesheet\app.css">
   <link rel="icon" href="favicon.png" type="image/icon">
 
-  <title>about</title>
+  <title>about/contact</title>
     <meta property="og:title" content="mrshibaton.com">
     <meta property="og:description" content="hello this is my website">
     <meta property="og:image" content="https://www.mrshibaton.com/images/misc/shiba_happy.png">
@@ -40,10 +40,13 @@
           <a class="nav-link" href="animations">animations</a>
         </li>
         <li class="nav-item">
+            <a class="nav-link" href="music">music</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="misc">misc.</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about-contact">about/contact</a>
+          <a class="nav-link wobble" href="about-contact">about/contact</a>
         </li>
       </ul>
     </div>
@@ -51,15 +54,17 @@
 
   <div class="overlay"><img src="images\paperbg.gif" onerror="this.onerror=null; this.src='images/paperbg.png'" style="filter: drop-shadow(0px 0px 0px rgba(0,0,0,0)); width: 100vw; height: 100vh; object-fit: cover;"/></div>
   <p>
-  <h1>ABOUT/CONTACT</h1>
+  <h1 class="wobble">ABOUT/CONTACT</h1>
   </p>
   <p class="bigtext" style="padding-bottom: 50px">
     hello, i'm a guy with a computer and too many ideas.
-    i created this website to help "unify"
-    all of the stuff i've made over the years. AND
-    so i can brag about all the stuff i've done!!! i don't need much in a
-    website, so it's pretty simple. theres only some weird HTML/CSS lol.
+    i created this website to help unify
+    all of the stuff i've made over the years. i think that is all.
     thanks for coming :-)
+    <br>
+  </p>
+  <p>
+    made using github pages
   </p>
   <h2 class="align-center">social media</h2>
   </p>
@@ -90,6 +95,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+
+  <script src="./wobble.js"></script>
 </body>
 
 </html>

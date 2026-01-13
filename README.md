@@ -1,1 +1,1 @@
-https://mrshibaton.github.io
+https://mrshibaton.com
