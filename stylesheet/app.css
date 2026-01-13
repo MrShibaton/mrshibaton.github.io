@@ -313,6 +313,9 @@ p {
   h1 {
     font-size: 350%;
   }
+  #gmail_link {
+    font-size: 80%;
+  }
 }
 
 @keyframes wobb {
