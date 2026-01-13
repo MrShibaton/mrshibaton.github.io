@@ -162,6 +162,26 @@ body {
   bottom: 350%;
 }
 
+.imgtooltip.bottom1 .imgtooltiptext {
+  bottom: 150%;
+  margin-left: -95px;
+  font-size: 75%;
+  transition: 
+    opacity .15s,
+    bottom .2s;
+}
+
+.bottom1:hover .imgtooltiptext {
+  visibility: visible;
+  opacity: 1;
+  bottom: 200%;
+}
+
+.bottom1:not(:hover) .imgtooltiptext {
+  opacity: 0;
+  bottom: 100%;
+}
+
 .copytxtClicked {
   position: relative;
   -webkit-animation: moving 1s;
