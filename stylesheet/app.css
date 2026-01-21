@@ -188,6 +188,9 @@ body {
   animation: moving 1s forwards, opacity 1s ease-out forwards;
 }
 
+p, h1, h2 {
+  color:#4a2200;
+}
 
 p, .nav-item {
   font-family: shibwritingregular;
@@ -378,4 +381,14 @@ html, body {
 #navImgButton:active img
 {
   transform: scale(0.9);
+}
+
+::selection {
+  background-color: #ff9a3b;
+  color: #000000;
+}
+
+::-moz-selection {
+  background-color: #ff9a3b;
+  color: #000000;
 }
